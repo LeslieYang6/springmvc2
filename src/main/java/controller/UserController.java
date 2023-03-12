@@ -4,6 +4,7 @@ import domain.User;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -65,15 +66,31 @@ public class UserController {
 
   @RequestMapping("/listParam")
   @ResponseBody
-  public String arrayParam(@RequestParam List<String> likes)
+  public String listParam(@RequestParam List<String> likes)
   {
     System.out.println("pojo参数传递 user:"+ likes);
     return "{'module':'arrayParam'}";
   }
 
-  @RequestMapping("/paramforJson")
+  @RequestMapping("/listParamForJson1")
   @ResponseBody
-  public String paramforJson(User user)
+  public String listParamForJson1(@RequestBody List<String> likes)
+  {
+    System.out.println("pojo参数传递 user:"+ likes);
+    return "{'module':'arrayParam'}";
+  }
+
+  @RequestMapping("/paramForJson")
+  @ResponseBody
+  public String paramForJson(@RequestBody User user)
+  {
+    System.out.println("pojo参数传递 user:"+ user);
+    return "{'module':'arrayParam'}";
+  }
+
+  @RequestMapping("/listParamForJson")
+  @ResponseBody
+  public String listParamForJson(@RequestBody List<User> user)
   {
     System.out.println("pojo参数传递 user:"+ user);
     return "{'module':'arrayParam'}";
