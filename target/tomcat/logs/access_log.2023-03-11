@@ -5,3 +5,12 @@
 127.0.0.1 - - [11/Mar/2023:22:59:51 +0100] "GET /book/save HTTP/1.1" 200 20 http-bio-80-exec-3 1
 127.0.0.1 - - [11/Mar/2023:23:03:03 +0100] "GET /commonParam HTTP/1.1" 404 949 http-bio-80-exec-2 25
 127.0.0.1 - - [11/Mar/2023:23:03:23 +0100] "GET /user/commonParam HTTP/1.1" 200 25 http-bio-80-exec-3 18
+0:0:0:0:0:0:0:1 - - [11/Mar/2023:23:06:49 +0100] "POST /user/commonParam HTTP/1.1" 200 25 http-bio-80-exec-6 1
+0:0:0:0:0:0:0:1 - - [11/Mar/2023:23:08:16 +0100] "POST /user/commonParam?name=itcast HTTP/1.1" 200 25 http-bio-80-exec-9 1
+0:0:0:0:0:0:0:1 - - [11/Mar/2023:23:08:31 +0100] "POST /user/commonParam?name=itcast HTTP/1.1" 200 25 http-bio-80-exec-2 33
+0:0:0:0:0:0:0:1 - - [11/Mar/2023:23:09:38 +0100] "POST /user/commonParam?name=itcast&age=15 HTTP/1.1" 200 25 http-bio-80-exec-2 33
+0:0:0:0:0:0:0:1 - - [11/Mar/2023:23:11:49 +0100] "POST /user/commonParam HTTP/1.1" 200 25 http-bio-80-exec-5 3
+0:0:0:0:0:0:0:1 - - [11/Mar/2023:23:11:58 +0100] "POST /user/commonParam HTTP/1.1" 200 25 http-bio-80-exec-6 1
+0:0:0:0:0:0:0:1 - - [11/Mar/2023:23:12:57 +0100] "POST /user/commonParam HTTP/1.1" 200 25 http-bio-80-exec-7 2
+0:0:0:0:0:0:0:1 - - [11/Mar/2023:23:15:50 +0100] "POST /user/commonParam HTTP/1.1" 200 25 http-bio-80-exec-2 35
+0:0:0:0:0:0:0:1 - - [11/Mar/2023:23:17:01 +0100] "POST /user/commonParam HTTP/1.1" 200 25 http-bio-80-exec-2 37

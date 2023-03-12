@@ -1,4 +1,6 @@
 controller\UserController.class
+domain\Address.class
 config\servletContainersInitConfig.class
+domain\User.class
 config\SpringMVCConfig.class
 controller\BookController.class
